@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>RMHStore — Boutique</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">Nova<span>Store</span></div>
+  <nav>
+    <a href="#hero">Accueil</a>
+    <a href="#products">Produits</a>
+    <a href="#cart">Panier</a>
+  </nav>
+</header>
+
+<main>
+  <section id="hero" class="hero">
+    <div class="hero-text">
+      <h1>Boutique RMHStore</h1>
+      <p>Un site simple, propre et pro pour présenter et vendre tes produits.</p>
+      <button class="primary" onclick="scrollToSection('products')">Voir les produits</button>
+    </div>
+    <div class="hero-card">
+      <h3>Sécurisé par PayPal</h3>
+      <p>Les paiements se font via PayPal. Tu ne touches jamais aux données bancaires.</p>
+      <ul>
+        <li>✔ Paiement sécurisé</li>
+        <li>✔ Interface claire</li>
+        <li>✔ Facile à modifier</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="products" class="section">
+    <h2>Produits</h2>
+    <div class="products-grid" id="products-grid">
+      <!-- Rempli par main.js -->
+    </div>
+  </section>
+
+  <section id="cart" class="section">
+    <h2>Panier</h2>
+    <div id="cart-items"></div>
+    <div class="cart-summary">
+      <span>Total :</span>
+      <span id="cart-total">0,00 €</span>
+    </div>
+    <button id="checkout-btn">Payer avec PayPal</button>
+    <p class="note">
+      Le bouton redirige vers PayPal avec le montant total.  
+      Tu dois mettre ton email PayPal dans le code (voir main.js).
+    </p>
+  </section>
+</main>
+
+<footer>
+  <p>RMHStore — Exemple de boutique. Adapte les produits, les prix et le style comme tu veux.</p>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
